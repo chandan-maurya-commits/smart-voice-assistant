@@ -31,7 +31,7 @@ It uses the Web Speech API for voice recognition and speech synthesis to create 
 
 ---
 
-```## 📂 Project Structure
+## 📂 Project Structure
 smart-voice-assistant/
 │
 ├── index.html
