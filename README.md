@@ -30,7 +30,7 @@ It uses the Web Speech API for voice recognition and speech synthesis to create 
 - LocalStorage
 
 ---
-
+```
 ## 📂 Project Structure
 smart-voice-assistant/
 │
@@ -40,7 +40,7 @@ smart-voice-assistant/
 ├── logo files
 ├── mic.svg
 ├── loading.gif
-
+```
 ---
 
 ## 🧠 How It Works
