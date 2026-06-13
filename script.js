@@ -7,7 +7,17 @@
         text_speak.pitch=1
         text_speak.volume=1
         text_speak.lang = "en-US"
-        window.speechSynthesis.speak(text_speak)
+        let voices = speechSynthesis.getVoices();
+
+        let maleVoice =
+            voices.find(v => v.name.includes("David")) ||
+            voices.find(v => v.name.includes("Mark")) ||
+            voices.find(v => v.name.includes("Male")) ||
+            voices[0];
+
+        text_speak.voice = maleVoice;
+
+        speechSynthesis.speak(text_speak);
     }
     function wishMe(){
         let day=new Date()
