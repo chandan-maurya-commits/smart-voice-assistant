@@ -21,21 +21,26 @@ body{
     height:auto;
 }
 h1{
+    
     color: aliceblue;
     font-family: "Protest Guerrilla", sans-serif;
-    text-align:center;
-    padding:0 10px;
-    line-height:1.2;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 10px;
+
+
       }
 #name{
-    color:rgb(109, 109, 201);
-    /* font-size:50px;  */
-    font-size:clamp(2rem,8vw,4rem);
+    
+
+    color: rgb(109, 109, 201);
+    font-size: clamp(2rem, 6vw, 4rem);
+    
 }
 #va{
-    color:rgb(105, 201, 156);
-    /* font-size:45px; */
-    font-size:clamp(1.8rem,7vw,3.5rem);
+   
+    color: rgb(105, 201, 156);
+    font-size: clamp(2rem, 6vw, 4rem);
 }
 #voice{
     width: 50px;
