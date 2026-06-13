@@ -61,22 +61,54 @@
             }else if(message.includes("open lnkedin")){
                 speak("opening linkedin...")
                 window.open("Linkedin://")
-            }else if(message.includes("open instagram")){
-                speak("opening instagram...")
-                window.open("https://instagram.com/","_blank")
-            }else if(message.includes("open google")){
+            } 
+            else if(message.includes("open instagram")){
+                 speak("opening instagram...");
+
+                 setTimeout(() => {
+
+                    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+                    if(isMobile){
+                         window.location.href = "instagram://";
+                    }else{
+                         window.open("https://instagram.com/", "_blank");
+                         }
+
+                }, 1000);
+            } 
+            else if(message.includes("open google")){
                 speak("opening google...")
                 window.open("https://google.com/","_blank")
-            }else if(message.includes("open whatsapp")){
-                speak("opening whatsapp...")
-                window.open("whatsapp://")
-            }else if(message.includes("open calculator")){
-                speak("opening calculator...")
-                window.open("Calculator://")
-            }else if(message.includes("open settings")){
-                speak("opening settings...")
-                window.open("settings://")
-            }else if(message.includes("how are you")||message.includes("how are you john?")){
+            }
+            
+            else if(message.includes("open whatsapp")){
+                speak("opening whatsapp...");
+
+                setTimeout(() => {
+
+                    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+                    if(isMobile){
+                         window.location.href = "https://wa.me/";
+                    }else{
+                         window.open("https://web.whatsapp.com/", "_blank");
+                    }
+
+                }, 1000);
+            }
+
+            else if(message.includes("open calculator")){
+                speak("opening calculator");
+
+                setTimeout(() => {
+                    window.open("https://www.google.com/search?q=calculator", "_blank");
+                                 }, 1000);
+            }
+            else if(message.includes("open settings")){
+                 speak("Sorry sir, browsers cannot directly open device settings.");
+            }
+            else if(message.includes("how are you")||message.includes("how are you john?")){
                 speak("I'm fine sir, how may i help?")
                 
             }else if(message.includes("time")){
