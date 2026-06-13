@@ -27,10 +27,19 @@ body{
 }
 
 h1{
-    color:white;
+    /* color:white; */
     font-family:"Protest Guerrilla", sans-serif;
     text-align:center;
     line-height:1.2;
+
+    white-space: nowrap;
+    transform: scale(0.85);
+
+    color: aliceblue;
+   
+  
+    
+    font-size: 1.2rem;
 }
 
 #name{
@@ -89,7 +98,7 @@ h1{
         0 0 25px rgba(34,34,170,.8);
 }
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
 
     #logo{
         width:180px;
@@ -101,7 +110,7 @@ h1{
 
     #name,
     #va{
-        font-size:2rem;
+        font-size: 1.7rem;
     }
 
     #btn{
