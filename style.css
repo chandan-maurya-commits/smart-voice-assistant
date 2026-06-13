@@ -36,20 +36,22 @@ h1{
     transform: scale(0.85);
 
     color: aliceblue;
+    font-size:clamp(2rem,4vw,3rem);
+
    
   
     
-    font-size: 1.2rem;
+   
 }
 
 #name{
     color:rgb(109,109,201);
-    font-size:clamp(2rem,6vw,4rem);
+    font-size:1.3em;
 }
 
 #va{
     color:rgb(105,201,156);
-    font-size:clamp(2rem,6vw,4rem);
+    font-size:1.3em;
 }
 
 #voice{
